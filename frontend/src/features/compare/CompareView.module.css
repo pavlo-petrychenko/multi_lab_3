@@ -1,0 +1,30 @@
+.view {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.grid,
+.gridLoading {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  transition: opacity 0.15s;
+}
+
+.gridLoading {
+  opacity: 0.6;
+}
+
+.note {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+@media (width < 900px) {
+  .grid,
+  .gridLoading {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

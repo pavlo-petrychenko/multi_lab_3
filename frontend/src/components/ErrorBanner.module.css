@@ -1,0 +1,7 @@
+.banner {
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: var(--danger-bg);
+  color: var(--danger-text);
+  font-size: 14px;
+}
